@@ -1,0 +1,433 @@
+---
+id: update-user
+title: "Update user"
+description: "This can only be done by the logged in user."
+sidebar_label: "Update user"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV01v2zYY/iucLm0AWYrjbsB8albkkG1ogjo5DElQ0BJlMZFIjaSsqIb/+56XkmwlLpL2vAA6UOT7zef94CZwfGWD+U1QW2GCuzBIhU2MrJzUKpgHV7m0LOGKaVW0bClYqpVgy5a5XLBCr1YiZVIxYo6CMNCVMJxYz1Mw11XKnbgmwWFQccNL4YQhbZtA4YdIcOiXYSBJX8VdHjw3ggigkDumhEgtc5os6aSnoDbi31oaLOfO1CIMbJKLkgfzTeDairRYZ6RaBdvtXUcsrPtDpy1RPNV07WUy+CsepXVCOe8auUgOW6cNmZpoRWfEz6uqkIn3Ob63JGRzqF8v70XiKAiGIuSksHQq0xGNhMiVj1SmTcldt/XbB2yIR15WBYimx9twH7ID/0aUAcz1gQdDJo11n1/l+FPnisgL/kPUoLBEDk9l8TLtPSR/9HRRoktiqri1jTbpy3zTk9mHXz15DtT9IC2FZ+G4q+13g/vsvulye+qngZ+dPAn8FpIfS+/nCLmkz0nnDeiijY0xInqWN0C8AaIHxKRpmgnJndSmECrRqUjfIPL/hggRGmErrWx3yanIeF24w/5k6yQR1mZ1wXat1mMMnTXX1HOr2mOG2ug8iElhvBluf4sTLNdDDwYCiYhXMl7PAmqOViS1ka5dEBo7WyrhfNv7ymuSuccn/ZPDWaGbDpol4Vx2bRGH2shv3sJrryd3rrLzOB4EziLbcAwQJpI69tLigYt6rE3goZfbwCIxJzZIKXUqs5bRH3XlVteG8STRtXJ+EuDpQEnr7txvdGGGr18fRDvyAzt/YSMc7mig6AeSHFL6PKb2/mU/PZwNF90l5fR4nGa7XHqSSl2+jNOlz4ldSjzH/Rj2PV530N79j+E73ZLhmfYe9jBbdHFml33k2YRdVEKdXp6zWXR8AHA/8+HjzHoPiQ+AJ8aFRw9bcou5T3dD0UgUs5VIZNYXu4ixf3Ttp8dMKtDXjpUkhS+xvFWDWZjrbggcwMYeEXfvD7aOInbeqXS5NJg7XZ8BTGd+G/fcjWgha8S7Nea1RjogOaWJkQjgp1yRNbgRhrJsNE/yX27VYKbSDctFUWHoY0Cz0Wvh+ci9JkeK0Sjo3lkagEv+gHrCkpyrlbB7DXBVeqOks6LImDbDGdX66FZd0SDb8BZGSpczJ0tvrzfguVIgfCUU3CxCDKUpptJKW/ilMRD3TivRsEzg8lFBiP7idDGDFoSXiAANKhaFVA92fqsm7OYqH1+oERAosWy7gFOCrmBWvST4DcGfUIkY1kP+Hu3EWSRZ0hk88j8jz8fKflpDvCz0Mi6RLKhi1iRYShXDT6/PxigQCnxRy8viCDAGWWkvMgKpTERfcp5AKPYkcT/C88TXqiH1IMoJXn7ck/vWBlGoy6MqfloBNYKd+NSpd7UNitDbI+5PI21Wcc9q47/PP519XpxNwBLlDi0BcqkKd/k2xe70d9+ztHUlVyNd/YOktoeNaLN/hvzsM60vfU48urgqEFTfBI1vVV3r6N+DYTDf1TS0hxz20dlmQxUAZX27pW2URIOSeoPlmhvJl1R10F9SaWmN0pXxwooX7H//pX/CHbHXHnvftX2o5Yrq9poXNf1h6Uv9vixv70DbV3QysDv+1JkxuSIhe/bXxzbqmLvGe3l9BeZl/6xEm/INf08cjn8QK7Sj/wBkMUsJ
+sidebar_class_name: "put api-method"
+info_path: docs/api-reference/swagger-petstore-openapi-3-0
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/user/{username}"}
+>
+  
+</MethodEndpoint>
+
+
+
+This can only be done by the logged in user.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"username","in":"path","description":"name that needs to be updated","required":true,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+  schemaType={"request"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          Update an existent user in the store
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","example":10}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"username"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"theUser"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"firstName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"John"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"lastName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"James"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"email"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"john@email.com"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"password"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"12345"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"phone"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"12345"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"userStatus"}
+          required={false}
+          schemaName={"int32"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","description":"User Status","format":"int32","example":1}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem><TabItem
+    label={"application/xml"}
+    value={"application/xml"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          Update an existent user in the store
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","example":10}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"username"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"theUser"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"firstName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"John"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"lastName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"James"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"email"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"john@email.com"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"password"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"12345"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"phone"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"12345"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"userStatus"}
+          required={false}
+          schemaName={"int32"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","description":"User Status","format":"int32","example":1}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem><TabItem
+    label={"application/x-www-form-urlencoded"}
+    value={"application/x-www-form-urlencoded"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          Update an existent user in the store
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","example":10}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"username"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"theUser"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"firstName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"John"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"lastName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"James"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"email"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"john@email.com"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"password"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"12345"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"phone"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"12345"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"userStatus"}
+          required={false}
+          schemaName={"int32"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","description":"User Status","format":"int32","example":1}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          successful operation
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

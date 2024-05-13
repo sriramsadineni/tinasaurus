@@ -136,6 +136,9 @@ const DocsCollection = {
   label: "Docs",
   path: "docs",
   format: "mdx",
+  match: {
+    exclude: 'api-reference/**',
+  },
   fields: [
     {
       type: "string",
@@ -820,8 +823,8 @@ const PagesCollection = {
 
 export default defineConfig({
   branch,
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // Get this from tina.io
-  token: process.env.TINA_TOKEN, // Get this from tina.io
+  clientId: '64cb76f5-f4b5-4363-aebe-16728dbf7e73', // Get this from tina.io
+  token: '24e5bee89706a4d637d26b988b357b06dde87602', // Get this from tina.io
   build: {
     outputFolder: "admin",
     publicFolder: "static",

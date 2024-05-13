@@ -1,42 +1,32 @@
 {
   "label": "Settings",
-  "navbar": [
-    {
-      "label": "Docs",
-      "link": "doc",
-      "docLink": "docs/intro.mdx",
-      "position": "left"
-    },
-    {
-      "label": "Blog",
-      "link": "blog",
-      "position": "left"
-    },
-    {
-      "label": "MDX Page",
-      "link": "page",
-      "docLink": "src/pages/Test-MDX-Page.mdx",
-      "pageLink": "src/pages/Test-MDX-Page.mdx",
-      "position": "left"
-    },
-    {
-      "label": "Docusaurus GitHub",
-      "link": "external",
-      "externalLink": "https://github.com/facebook/docusaurus",
-      "position": "right"
-    },
-    {
-      "label": "Tina",
-      "link": "external",
-      "externalLink": "https://tina.io/",
-      "position": "right"
-    }
-  ],
   "logo": {
     "alt": "Tina",
     "src": "/img/tina-icon.svg"
   },
-  "title": "Tinasaurus",
+  "title": "Piyovi Docs",
+  "tagline": "Piyovi Docs",
+  "url": "https://tinasaurus.vercel.app/",
+  "navbar": [
+    {
+      "label": "Guides",
+      "link": "doc",
+      "docLink": "docs/guides/index.mdx",
+      "position": "left"
+    },
+    {
+      "label": "Release",
+      "link": "doc",
+      "docLink": "docs/changelogs/index.mdx",
+      "position": "left"
+    },
+    {
+      "label": "Api Documentation",
+      "link": "external",
+      "externalLink": "/category/petstore-api",
+      "position": "left"
+    }
+  ],
   "footer": {
     "style": "dark",
     "links": [
@@ -86,6 +76,5 @@
       }
     ],
     "copyright": "My Project, Inc. Built with Docusaurus."
-  },
-  "url": "https://tinasaurus.vercel.app/"
+  }
 }

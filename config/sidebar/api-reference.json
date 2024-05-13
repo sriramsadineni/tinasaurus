@@ -1,0 +1,11 @@
+{
+  "id": "apiReferenceSideBar",
+  "label": "Api Reference Side",
+  "items": [
+    {
+      "document": "docs/guides/invoice-audit/index.mdx",
+      "label": "Get Started",
+      "_template": "doc"
+    }
+  ]
+}

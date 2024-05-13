@@ -1,7 +1,7 @@
 const docusaurusData = require("./config/docusaurus/index.json");
+import {themes as prismThemes} from 'prism-react-renderer';
+import type { ScalarOptions } from '@scalar/docusaurus'
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const getDocId = (doc) => {
   return doc
@@ -32,7 +32,7 @@ const formatFooterItem = (item) => {
       }),
     };
   } else {
-    let linkObject = {
+    let linkObject:any = {
       label: item.label,
     };
 
@@ -49,7 +49,8 @@ const formatFooterItem = (item) => {
 };
 
 const formatNavbarItem = (item, subnav = false) => {
-  let navItem = {
+
+  let navItem:any = {
     label: item.label,
   };
 
@@ -68,7 +69,6 @@ const formatNavbarItem = (item, subnav = false) => {
   if (item.link === "page" && item.pageLink) {
     navItem.to = getPageRoute(item.pageLink);
   }
-
   if (item.link === "doc" && item.docLink) {
     navItem.type = "doc";
     navItem.docId = getDocId(item.docLink);
@@ -107,8 +107,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.ts"),
           editUrl: docusaurusData.url + "/admin/#/collections/doc",
+          docItemComponent: "@theme/ApiItem",
+          docRootComponent: "@theme/DocRoot", 
         },
         blog: {
           showReadingTime: true,
@@ -120,7 +123,53 @@ const config = {
       }),
     ],
   ],
-
+  
+  plugins: [
+    [
+      'docusaurus-plugin-openapi-docs',{
+        id: "openapi", // plugin id
+        docsPluginId: "classic", // id of plugin-content-docs or preset for rendering docs
+        config: {
+          api: {
+            
+            specPath: "https://cdn.scalar.com/spec/openapi_petstore.json",
+            outputDir: "docs/api-reference", // No trailing slash
+          
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "info",
+              sidebarCollapsible:true,
+              sidebarCollapsed:false
+            },
+            // version: "2.0.0", // Current version
+            // label: "v2.0.0", // Current version label
+            // baseUrl: "/api-reference/get-started", // Leading slash is important
+            // versions: {
+            //   "1.0.0": {
+            //     specPath: "https://apidev.piyovi.io/swagger/v1/swagger.json",npm 
+            //     outputDir: "docs/api-reference/1.0.0", // No trailing slash
+            //     label: "v1.0.0",
+            //     baseUrl: "/api-reference/1.0.0/get-started", // Leading slash is important
+            //   },
+            // },
+          }
+      
+        }
+    }],
+    // [
+    //   '@scalar/docusaurus',
+    //   {
+    //     label: 'Api Referfence',
+    //     route: '/api',
+    //     configuration: {
+    //       spec: {
+    //         url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
+    //       },
+    //     },
+    //   } as ScalarOptions,
+    // ],
+  ],
+  themes: ["docusaurus-theme-openapi-docs"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -134,9 +183,9 @@ const config = {
             ? docusaurusData?.logo?.src
             : "img/logo.svg",
         },
-        items: docusaurusData.navbar.map((item) => {
+        items: [].concat(docusaurusData.navbar.map((item) => {
           return formatNavbarItem(item);
-        }),
+        })),
       },
       footer: {
         style: docusaurusData.footer?.style || "dark",
@@ -148,10 +197,11 @@ const config = {
           (docusaurusData.footer?.copyright || docusaurusData.title),
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.dracula,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: ['json'],
       },
     }),
 };
 
-module.exports = config;
+export default config;

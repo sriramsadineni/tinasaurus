@@ -1,0 +1,125 @@
+---
+id: delete-pet
+title: "Deletes a pet"
+description: ""
+sidebar_label: "Deletes a pet"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVUtv2zgQ/iuzvLQBHCltigXWpwZbH4wtNsE6e1gkRkFTI4uIRLIkZdVr+L93hpL8aJICPXk8nMc3n+axE1Gug5g+CIdRLCeiwKC8dlFbI6ZCTIR16CX/nRekKLDGiHdkOxFOetnQP8/+O2HoD1lIp7884ZbeNUeoUBboxQuBPX5ttUeKWso64EQEVWEjxXQn4tZxqBC9Nmux308O0Qkl4RhiOxmrZ5EJG+gCooUe61mm6NuXEmkTcZ1QltY3Mvaq3z9Q6iW7B2dNwMAeH66u+Oc859xsZE1JCR2Q1CJjFgFV63XcJnboKUTr8YtsCTTx3dETTlmdEMqil5eckVit7JHuxDV7iZxs8l0iYS84g9+M9Le+ZgOiP99cC44y5l9wuT36H1AcCLD8/z3XX9suWerG1VrpyDI/Wq//T23wb8pTxejCNM/HgNdZ6OSaOMy0zVO0fPRi+EFRG6W4J2VPRWMLXW6ZtgDawNa2HqRStjXxjJRpkvv3pNjvmeCx1Y51kOav1Hs/bUb21aa0yVHHmi0XPXy4GwqCS7h1aG7u5nCdXT3rsvtKE+QAEoIkppD9YJEcF+mjwEoGLMAaiBWehoLgUOlSq8RmBvCfbUFJA6U2ZN9GaDiKXJH4aEZYMsIDc06UH4levn2mushg3qeMlfYFENn99IItk5pbNBU4gQ7fbBBCpyM1SJoYNqA69ZrR+BBBOuetVNVvj2aEaWwHFdYOWiKgoecNJj8ur6uocQmtjm8CrLbQyCcaYFCVNGsMxwxUqk6gdAxYl2D9+KZsgdmjua+o4E5uCaSOFUTdJLwJwI9JqXHWaKjMegKSKMRvzgaqyzY4Fm2wgxJlbGmU2f72ZnFNWYheNmoDlm0NtTZPYfpoLuHhvjr9oB4poCZx2xPOfb8mWO0qU7YZyb/kyRvlcSwuDuEC9a7qAZ/UX3Llp8l+OUO+qu0qb2SgD50Hr0jUJqc6U76Q09wZ8su2sqkvqI3JrAm3JTepVjhM8lkL5ckkJ1tlTZQqrQDal7ruByqibD4ezQUNE20KpAXJhsPg3TjqGoT3aXTaw8qgRF3XZTK9Ztav88E15J/nf87+XswuySWrYlNzXF5u/by9I+27P1hH3yI20pzk+pSWJM+iS3fpbFJ3qQo0sT86w56I+C3mriaqOGTCtxt2bH8JJ2LanxraoxVlZP1uxzNN+2+/Z/XXFj3vdhI30mu54j1Ci7jQgeXjXXsVz9t/hsN0AS9crRehjnvO8E7rT02qK63B4Trul2Q4rLpfA/Ra1j76cZkeEp8dq0+zz7P7GT2/dlwGgSij9f0d4jzqqQ==
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/swagger-petstore-openapi-3-0
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Deletes a pet"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/pet/{petId}"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"petId","in":"path","description":"Pet id to delete","required":true,"schema":{"type":"integer","format":"int64"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"api_key","in":"header","description":"","required":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Invalid pet value
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

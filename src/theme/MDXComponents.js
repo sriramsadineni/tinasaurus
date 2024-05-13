@@ -5,6 +5,7 @@ import Details from "@theme/Details";
 import Tabs from "@theme-original/Tabs";
 import TabItem from "@theme-original/TabItem";
 import DocCardList from "@theme-original/DocCardList";
+import ApiReference from './../components/api-reference';
 
 export default {
   ...MDXComponents,
@@ -14,4 +15,6 @@ export default {
   TabItem: TabItem,
   Admonition: MDXComponents.admonition,
   DocCardList: DocCardList,
+  ApiReference : ApiReference,
+  
 };

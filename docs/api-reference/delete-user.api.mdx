@@ -1,0 +1,114 @@
+---
+id: delete-user
+title: "Delete user"
+description: "This can only be done by the logged in user."
+sidebar_label: "Delete user"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVV1v2zYU/St3emkDKFLa9GV+WrD6wVixFHP6MCRBQUtXFhGJVEnKqmb4v+9cWordphhWwIAp8n6dy3MP90lQW58s7pPes0se06RkXzjdBW1Nskjuau2pUIasaUbaMJXWMG1GCjVTY7dbLkkbEucsSRPbsVPiuirhXHLDgT9J4DTplFMtPp1k2ycGHzARx7hMEy35OhXq5GURTGKEpCqQYS49BRuriRlKeDj+0muH5SK4ntPEFzW3KlnskzB2kskHp802ORwexdh31nj2cv7u6kr+vk25MjvV6JLm+sj3XddoxD+k8Hj30kNgkrGBKtsbmMEOcGt7akRsAuAtklzC5vs5+AEnWO7m3vSuESPV6Xx3nUjBnove6TCuBdWx7I6DD9bxZ9VLzGecVr7fImLV2CFa6haVFzrIWg6t0//ES/oU89QhdH6R53PA68wPChfrMm3zGC2fvQSCL3DJMe6AinghbojS2lJXI8mXEGK0vSNVFOhFiLejytlS1sfzuHE4SKuA9fMTj2c4sPMHNtKZKbPFRJQaUcAr8dWmstFRh0Ys18fy6eMEiC7ptmNz83FF19nVD9gFiuOnyCt0isWP1tFxHS+FNsqD5tZE0p+FIt9xoStdxG5mRH/bPg5LpQ3s+0CtRFEbLB/MXBYofC89R8tPjX58/WLrIqPVMWWotcOYhWm2yFZxG+2jCDClgV/twNFBBxCklOEQA+DUW6nG+UCq65xVRf3Lg5nLNHagmpsOLCeQxNkdRz+BN9QgL6rV4ZWXeW/VE8aHilqZLftTBkDVsSgdPDcVWTefFbbk7MHcycwOakSROtQUdBvrjQV8nxTE2bIBzCYlhRby18564LIYwAm04YEqVqHHDIv97c36GlnQXjHCRFV9Q402T37xYC7pXrTjdKGOEVBjOR4bLrzfoqx+kxW2nZt/KZM3r+exuHgO58Hd4ljwGf5KkJ8n++kM+aaxm7xVHhede1dgqU0OnDGfzzF3Bn7ZqNrmAjSGWetvKyGpLnia5G8olEeTHLaFNUEVUQIgi7o5DlRg1f52Mhdtg1IwlFEMp8G76cAaprdxdPpnyUCiYRgyFU8z67b55OrzD6vfl3+ul5dwyerQNhJXxO04b2+w++ZX2cNdhFaZs1zvo1BG1f1+TvcRA0NOfvpVmhQl8NeQdw2aKskjkv2kyNPzlyaL5wcJqlujPjnb70UBoJaHg2x/6dlBqe6x3Cmn1UZUB7Jdai9rCH6lGs//Uf/rv6bX6oL+z9v2w/pnmTQiiXisevnCMqro6V09PJ4/RO+XH5Z3S6jmv256w9I=
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/swagger-petstore-openapi-3-0
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/user/{username}"}
+>
+  
+</MethodEndpoint>
+
+
+
+This can only be done by the logged in user.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"username","in":"path","description":"The name that needs to be deleted","required":true,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Invalid username supplied
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          User not found
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

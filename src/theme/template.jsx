@@ -96,6 +96,17 @@ const CodeBlockTemplate = {
   ],
 };
 
+const ScalarApiTemplate = {
+  name: "ApiReference",
+  label: "Api Reference",
+  fields: [
+    {
+      name: "url",
+      label: "Spec Url",
+      type: "string",
+    },
+  ],
+};
 const TabsTemplate = {
   name: "Tabs",
   fields: [
@@ -155,7 +166,6 @@ const TabsTemplate = {
     },
   ],
 };
-
 const DocCardListTemplate = {
   name: "DocCardList",
   label: "Doc Card List",
@@ -174,4 +184,5 @@ export const MDXTemplates = [
   CodeBlockTemplate,
   TabsTemplate,
   DocCardListTemplate,
+  ScalarApiTemplate
 ];
