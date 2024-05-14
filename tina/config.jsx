@@ -573,6 +573,11 @@ const SettingsCollection = {
           label: "Source",
           name: "src",
         },
+        {
+          type: "image",
+          label: "Source",
+          name: "srcDark",
+        },
       ],
     },
     {
@@ -812,6 +817,16 @@ const PagesCollection = {
       label: "Description",
     },
     {
+      type: "string",
+      name: "wrapperClassName",
+      label: "Wrapper Class Name",
+    },
+    {
+      type: "boolean",
+      name: "hide_table_of_contents",
+      label: "hide table of contents",
+    },
+    {
       type: "rich-text",
       name: "body",
       label: "Body",
@@ -820,6 +835,7 @@ const PagesCollection = {
     },
   ],
 };
+
 
 export default defineConfig({
   branch,

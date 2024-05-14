@@ -1,13 +1,16 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Feature = ({ image, title, description }) => {
+const Feature = ({ image, title, description,icon,size }) => {
   return (
     <div className={clsx("col col--4")}>
-      {image && (
-        <div className="text--center">
-          <img className={styles.featureSvg} src={image} role="img" />
+      {(
+        <div className="text--center" title={icon}>
+         {
+          icon ? (<h1><FontAwesomeIcon icon={icon} size={size}  /></h1>) : <img className={styles.featureSvg} src={image} role="img" />
+         }
         </div>
       )}
       <div className="text--center padding-horiz--md">

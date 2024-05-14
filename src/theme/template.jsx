@@ -177,6 +177,22 @@ const DocCardListTemplate = {
     },
   ],
 };
+const FontAwesomeIconTemplate = {
+  name: "FontAwesomeIcon",
+  label: "Font Awesome Icon",
+  fields: [
+    {
+      name: "icon",
+      label: "iIcon",
+      type: "string",
+    },
+    {
+      name: "size",
+      label: "Size",
+      type: "string",
+    },
+  ],
+};
 
 export const MDXTemplates = [
   AdmonitionTemplate,
@@ -184,5 +200,6 @@ export const MDXTemplates = [
   CodeBlockTemplate,
   TabsTemplate,
   DocCardListTemplate,
-  ScalarApiTemplate
+  ScalarApiTemplate,
+  FontAwesomeIconTemplate
 ];

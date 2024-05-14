@@ -2,7 +2,8 @@
   "label": "Settings",
   "logo": {
     "alt": "Tina",
-    "src": "/img/tina-icon.svg"
+    "src": "/img/tina-icon.svg",
+    "srcDark": "/img/tina-icon.svg"
   },
   "title": "Piyovi Docs",
   "tagline": "Piyovi Docs",
