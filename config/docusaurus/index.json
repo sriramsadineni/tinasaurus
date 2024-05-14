@@ -2,8 +2,8 @@
   "label": "Settings",
   "logo": {
     "alt": "Tina",
-    "src": "/img/tina-icon.svg",
-    "srcDark": "/img/tina-icon.svg"
+    "src": "/img/logo-removebg-preview-1.png",
+    "srcDark": "/img/logo_white-e1656456093112.png"
   },
   "title": "Piyovi Docs",
   "tagline": "Piyovi Docs",
@@ -22,7 +22,7 @@
       "position": "left"
     },
     {
-      "label": "Api Documentation",
+      "label": "Api Reference",
       "link": "external",
       "externalLink": "/category/petstore-api",
       "position": "left"

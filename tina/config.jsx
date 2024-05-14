@@ -262,6 +262,9 @@ const CategoryFields = [
     label: "Document",
     type: "reference",
     collections: ["doc"],
+    labelField:(e)=>{
+      console.log(e);
+    },
     ui: {
       component: (props) => {
         const link = React.useMemo(() => {

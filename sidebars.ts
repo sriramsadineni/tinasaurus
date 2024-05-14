@@ -170,6 +170,7 @@ try {
 
     sidebars[sidebarData.id] = _dide;
   });
+  
 
   if(!sidebars.apiReferenceSideBar){
     sidebars.apiReferenceSideBar = [];

@@ -169,7 +169,6 @@ const config = {
       })),
     },
     footer: {
-      style: docusaurusData.footer?.style || "dark",
       links: docusaurusData.footer?.links.map((item) => {
         return formatFooterItem(item);
       }),

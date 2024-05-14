@@ -1,5 +1,7 @@
 import React from "react";
 import { slugify } from "../../util";
+import { library } from '@fortawesome/fontawesome-svg-core'; // Import the library component.
+
 
 const AdmonitionTemplate = {
   name: "Admonition",
