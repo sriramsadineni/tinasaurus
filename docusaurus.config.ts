@@ -1,6 +1,7 @@
 const docusaurusData = require("./config/docusaurus/index.json");
 import {themes as prismThemes} from 'prism-react-renderer';
 import type { ScalarOptions } from '@scalar/docusaurus'
+import type * as Preset from '@docusaurus/preset-classic';
 
 
 const getDocId = (doc) => {
@@ -119,13 +120,13 @@ const config = {
           editUrl: docusaurusData.url + "/admin/#/collections/post",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
   ],
   
-  plugins: [
+  plugins: [ 'docusaurus-plugin-sass',
     [
       'docusaurus-plugin-openapi-docs',{
         id: "openapi", // plugin id
@@ -148,38 +149,68 @@ const config = {
     }],
   ],
   themes: ["docusaurus-theme-openapi-docs"],
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: docusaurusData.title || "",
-        logo: {
-          alt: docusaurusData?.logo?.alt
-            ? docusaurusData?.logo?.alt
-            : "My Logo",
-          src: docusaurusData?.logo?.src
-            ? docusaurusData?.logo?.src
-            : "img/logo.svg",
-        },
-        items: [].concat(docusaurusData.navbar.map((item) => {
-          return formatNavbarItem(item);
-        })),
+  themeConfig: {
+    navbar: {
+      title: docusaurusData.title || "",
+      logo: {
+        alt: docusaurusData?.logo?.alt
+          ? docusaurusData?.logo?.alt
+          : "My Logo",
+        src: docusaurusData?.logo?.src
+          ? docusaurusData?.logo?.src
+          : "img/logo.svg",
+        srcDark:  docusaurusData?.logo?.srcDark
+        ? docusaurusData?.logo?.srcDark
+        : "img/logo.svg",
       },
-      footer: {
-        style: docusaurusData.footer?.style || "dark",
-        links: docusaurusData.footer?.links.map((item) => {
-          return formatFooterItem(item);
-        }),
-        copyright:
-          `Copyright © ${new Date().getFullYear()} ` +
-          (docusaurusData.footer?.copyright || docusaurusData.title),
-      },
-      prism: {
-        theme: prismThemes.dracula,
+
+      items: [].concat(docusaurusData.navbar.map((item) => {
+        return formatNavbarItem(item);
+      })),
+    },
+    footer: {
+      style: docusaurusData.footer?.style || "dark",
+      links: docusaurusData.footer?.links.map((item) => {
+        return formatFooterItem(item);
+      }),
+      copyright:
+        `Copyright © ${new Date().getFullYear()} ` +
+        (docusaurusData.footer?.copyright || docusaurusData.title),
+    },
+    prism: {
+      theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['json'],
+    },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: '9K527TJ8A7',
+
+      // Public API key: it is safe to commit it
+      apiKey: '58dc48cbd0fef8810580478258d293e1',
+
+      indexName: 'docs_piyovi',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
       },
-    }),
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      
+      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+      insights: false,
+
+      //... other Algolia params
+    },
+  } satisfies Preset.ThemeConfig
 };
 
 export default config;

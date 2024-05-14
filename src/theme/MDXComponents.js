@@ -6,7 +6,15 @@ import Tabs from "@theme-original/Tabs";
 import TabItem from "@theme-original/TabItem";
 import DocCardList from "@theme-original/DocCardList";
 import ApiReference from './../components/api-reference';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import the FontAwesomeIcon component.
+import { library } from '@fortawesome/fontawesome-svg-core'; // Import the library component.
+
+import { fas } from '@fortawesome/pro-solid-svg-icons'; // Import all solid icons.
+import { fal } from '@fortawesome/pro-light-svg-icons'; // Import all solid icons.
+import { far } from '@fortawesome/pro-regular-svg-icons'; // Import all solid icons.
+import { fat } from '@fortawesome/pro-thin-svg-icons'; // Import all solid icons.
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
 
 export default {
   ...MDXComponents,
@@ -17,5 +25,6 @@ export default {
   Admonition: MDXComponents.admonition,
   DocCardList: DocCardList,
   ApiReference : ApiReference,
-  FAIcon:FontAwesomeIcon
+  FontAwesomeIcon:FontAwesomeIcon
 };
+library.add(fal, fas,far,fat); // Add all icons to the library so you can use them without importing them individually.

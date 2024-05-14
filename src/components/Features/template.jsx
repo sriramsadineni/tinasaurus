@@ -1,5 +1,7 @@
 import React from "react";
-
+import { defineConfig, wrapFieldsWithMeta } from 'tinacms'
+import { faCheckCircle, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export const FeaturesBlockTemplate = {
   name: "features",
   label: "Features",
@@ -29,6 +31,16 @@ export const FeaturesBlockTemplate = {
           name: "image",
           label: "Image",
           type: "image",
+        },
+        {
+          name: "icon",
+          label: "Icon",
+          type: 'string',
+        },
+        {
+          name: "size",
+          label: "icon Size",
+          type: 'string',
         },
       ],
     },

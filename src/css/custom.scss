@@ -3,382 +3,330 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
- @import url('https://kit.fontawesome.com/b6ec375b2a.css');
+ @import 'https://kit.fontawesome.com/b6ec375b2a.css';
 
  ::-webkit-scrollbar {
-   width: 5px;
-   height: 5px
- }
- 
- html {
-   font-size: 1rem;
- }
- 
- ::-webkit-scrollbar-thumb {
-   background: #bbb;
-   -webkit-box-shadow: inset 0 0 2px #ccc
- }
- 
- ::-webkit-scrollbar-track {
-   -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
-   background: #0000000d
- }
- 
- :root {
-   --ifm-code-background: #f7f7f7;
-   --ifm-color-primary: #eb773f;
-   --ifm-color-primary-dark: #d46838;
-   --ifm-color-primary-darker: #c05e32;
-   --ifm-color-primary-darkest: #a7552c;
-   --ifm-color-primary-light: #f1844b;
-   --ifm-color-primary-lighter: #f28d5c;
-   --ifm-color-primary-lightest: #f6a07b;
-   --ifm-code-font-size: 95%;
-   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-   /* Fonts */
-   --ifm-font-family-base: ui-sans-serif, system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-   --ifm-font-family-monospace: 'Source Code Pro', monospace;
-   --ifm-font-size-base: 90%;
-   --ifm-global-radius: 3px;
-   --color-input-border: #e5e5ee;
-   --ifm-color-primary-lightest-1: rgba(eb773f, .5);
-   --ifm-menu-color-background-active: var(--ifm-color-primary-lightest-1);
-   --openapi-explorer-padding-input: .7rem !important;
-   --openapi-explorer-schema-detail-color: #f7f7f7;
- }
- 
- html[data-theme='dark'] {
-   --ifm-color-primary: #eb773f;
-   --ifm-color-primary-dark: #d46838;
-   --ifm-color-primary-darker: #c05e32;
-   --ifm-color-primary-darkest: #a7552c;
-   --ifm-color-primary-light: #f1844b;
-   --ifm-color-primary-lighter: #f28d5c;
-   --ifm-color-primary-lightest: #f6a07b;
-   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-   --ifm-menu-color: rgba(163, 163, 163);
-   --ifm-global-radius: 2px;
-   --ifm-background-surface-color: #111;
-   --ifm-list-border: #212121;
-   --ifm-toc-link-color: #9ca3af;
-   --ifm-color-content: #e2e8f0;
-   --openapi-explorer-schema-detail-color: #262626;
- 
- }
- 
- [data-theme='dark'] .navbar {
-   border-bottom: 1px solid var(--ifm-list-border);
- }
- 
- [data-theme='light'] .DocSearch {
-   /* --docsearch-primary-color: var(--ifm-color-primary); */
-   /* --docsearch-text-color: var(--ifm-font-color-base); */
-   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-   --docsearch-container-background: rgba(94, 100, 112, 0.7);
-   /* Modal */
-   --docsearch-modal-background: var(--ifm-color-secondary-lighter);
-   /* Search box */
-   --docsearch-searchbox-background: var(--ifm-color-secondary);
-   --docsearch-searchbox-focus-background: var(--ifm-color-white);
-   /* Hit */
-   --docsearch-hit-color: var(--ifm-font-color-base);
-   --docsearch-hit-active-color: var(--ifm-color-white);
-   --docsearch-hit-background: var(--ifm-color-white);
-   /* Footer */
-   --docsearch-footer-background: var(--ifm-color-white);
-   --font-family-icon: "Font Awesome 6 Pro";
- }
- 
- [data-theme='dark'] .DocSearch {
-   --docsearch-text-color: var(--ifm-font-color-base);
-   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-   --docsearch-container-background: rgba(47, 55, 69, 0.7);
-   /* Modal */
-   --docsearch-modal-background: var(--ifm-background-color);
-   /* Search box */
-   --docsearch-searchbox-background: var(--ifm-background-color);
-   --docsearch-searchbox-focus-background: var(--ifm-color-black);
-   /* Hit */
-   --docsearch-hit-color: var(--ifm-font-color-base);
-   --docsearch-hit-active-color: var(--ifm-color-white);
-   --docsearch-hit-background: var(--ifm-color-emphasis-100);
-   /* Footer */
-   --docsearch-footer-background: var(--ifm-background-surface-color);
-   --docsearch-key-gradient: linear-gradient(-26.5deg,
+	width: 5px;
+	height: 5px;
+}
+html {
+	font-size: 1rem;
+}
+::-webkit-scrollbar-thumb {
+	background: #bbb;
+	-webkit-box-shadow: inset 0 0 2px #ccc;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+	background: #0000000d;
+}
+:root {
+	--ifm-code-background: #f7f7f7;
+	--ifm-color-primary: #eb773f;
+	--ifm-color-primary-dark: #d46838;
+	--ifm-color-primary-darker: #c05e32;
+	--ifm-color-primary-darkest: #a7552c;
+	--ifm-color-primary-light: #f1844b;
+	--ifm-color-primary-lighter: #f28d5c;
+	--ifm-color-primary-lightest: #f6a07b;
+	--ifm-code-font-size: 95%;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-font-family-base: ui-sans-serif, system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	--ifm-font-family-monospace: 'Source Code Pro', monospace;
+	--ifm-font-size-base: 90%;
+	--ifm-global-radius: 3px;
+	--color-input-border: #e5e5ee;
+	--ifm-color-primary-lightest-1: rgba(eb773f, .5);
+	--ifm-menu-color-background-active: var(--ifm-color-primary-lightest-1);
+	--openapi-explorer-padding-input: .7rem !important;
+	--openapi-explorer-schema-detail-color: #f7f7f7;
+}
+html[data-theme='dark'] {
+	--ifm-color-primary: #eb773f;
+	--ifm-color-primary-dark: #d46838;
+	--ifm-color-primary-darker: #c05e32;
+	--ifm-color-primary-darkest: #a7552c;
+	--ifm-color-primary-light: #f1844b;
+	--ifm-color-primary-lighter: #f28d5c;
+	--ifm-color-primary-lightest: #f6a07b;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+	--ifm-menu-color: rgba(163, 163, 163);
+	--ifm-global-radius: 2px;
+	--ifm-background-surface-color: #111;
+	--ifm-list-border: #212121;
+	--ifm-toc-link-color: #9ca3af;
+	--ifm-color-content: #e2e8f0;
+	--openapi-explorer-schema-detail-color: #262626;
+	background-color: var(--ifm-background-surface-color);
+	.openapi-markdown__details {
+		background-color: var(--openapi-explorer-schema-detail-color);
+		border: 1px solid var(--color-input-border);
+		padding: 8px 8px;
+		.openapi-markdown__details {
+			padding: 0px 8px;
+			border: none;
+		}
+	}
+}
+[data-theme='dark'] {
+	color: #e2e8f0;
+	.navbar {
+		border-bottom: 1px solid var(--ifm-list-border);
+	}
+	.DocSearch {
+		--docsearch-text-color: var(--ifm-font-color-base);
+		--docsearch-muted-color: var(--ifm-color-secondary-darkest);
+		--docsearch-container-background: rgba(47, 55, 69, 0.7);
+		--docsearch-modal-background: var(--ifm-background-color);
+		--docsearch-searchbox-background: var(--ifm-background-color);
+		--docsearch-searchbox-focus-background: var(--ifm-color-black);
+		--docsearch-hit-color: var(--ifm-font-color-base);
+		--docsearch-hit-active-color: var(--ifm-color-white);
+		--docsearch-hit-background: var(--ifm-color-emphasis-100);
+		--docsearch-footer-background: var(--ifm-background-surface-color);
+		--docsearch-key-gradient: linear-gradient(-26.5deg,
        var(--ifm-color-emphasis-200) 0%,
        var(--ifm-color-emphasis-100) 100%);
- }
- 
- html[data-theme='dark'] {
-   background-color: var(--ifm-background-surface-color);
- }
- 
- .openapi-explorer__request-form:hover,
+	}
+	aside {
+		&.theme-doc-sidebar-container {
+			.menu__list {
+				&::before {
+					background-color: var(--openapi-explorer-schema-detail-color);
+				}
+			}
+		}
+	}
+	#search_input_react {
+		background: #f9fafb1a;
+	}
+	.pagination-nav__link {
+		.pagination-nav__label {
+			color: #d1d5db;
+			font-weight: 500;
+		}
+	}
+	.openapi-explorer__floating-btn {
+		button {
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 0;
+			border-radius: 100% !important;
+			background: var(--ifm-color-primary);
+			color: white;
+		}
+	}
+	.openapi-explorer__server-container {
+		.openapi-explorer__form-item {
+			padding: 0;
+		}
+	}
+}
+[data-theme='light'] {
+	color: #334155;
+	.DocSearch {
+		--docsearch-muted-color: var(--ifm-color-secondary-darkest);
+		--docsearch-container-background: rgba(94, 100, 112, 0.7);
+		--docsearch-modal-background: var(--ifm-color-secondary-lighter);
+		--docsearch-searchbox-background: var(--ifm-color-secondary);
+		--docsearch-searchbox-focus-background: var(--ifm-color-white);
+		--docsearch-hit-color: var(--ifm-font-color-base);
+		--docsearch-hit-active-color: var(--ifm-color-white);
+		--docsearch-hit-background: var(--ifm-color-white);
+		--docsearch-footer-background: var(--ifm-color-white);
+		--font-family-icon: "Font Awesome 6 Pro";
+	}
+	.pagination-nav__link {
+		.pagination-nav__label {
+			color: #4f5a66;
+			font-weight: 500;
+		}
+	}
+	.openapi-explorer__floating-btn {
+		button {
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 0;
+			border-radius: 100% !important;
+			background: var(--ifm-color-primary);
+			color: white;
+		}
+	}
+	.openapi-explorer__form-item {
+		padding: 0;
+		.openapi-explorer__server-url {
+			padding: 1em;
+			display: block;
+			border-radius: var(--ifm-global-radius);
+			border: 1px solid var(--color-input-border);
+		}
+	}
+}
+.openapi-explorer__request-form:hover,
  .openapi-explorer__request-form,
  .openapi-explorer__response-container {
-   box-shadow: none !important
- }
- 
- .menu__caret:before,
+	box-shadow: none !important;
+}
+.menu__caret:before,
  .menu__link--sublist-caret:after {
-   height: 1.25rem;
-   background-size: 16px 16px;
- }
- 
- 
- html[data-theme='light'] .openapi-markdown__details {
-   background-color:var(--openapi-explorer-schema-detail-color);
-   border: 1px solid var(--color-input-border);
-   padding: 8px 8px;
- 
- }
- html[data-theme='dark'] .openapi-markdown__details .openapi-markdown__details  {
-   padding: 0px 8px;
-   border: none;
- }
- 
- 
- html[data-theme='dark'] .openapi-markdown__details {
-   background-color: var(--openapi-explorer-schema-detail-color);
-   border: 1px solid var(--color-input-border);
-   padding: 8px 8px;
- 
- }
- html[data-theme='light'] .openapi-markdown__details .openapi-markdown__details  {
-   padding: 0px 8px;
-   border: none;
- }
- 
- 
- 
- .pagination-nav__sublabel {
-   display: none;
- }
- 
- .pagination-nav__link--next .pagination-nav__label::after {
-   content: "\f054";
-   font-family: "Font Awesome 6 Pro";
-   margin-left: .5rem;
-   font-size: 1.125rem;
- }
- 
- .pagination-nav__link--prev .pagination-nav__label::before {
-   content: "\f053";
-   font-family: "Font Awesome 6 Pro";
-   margin-right: .5rem;
-   font-size: 1.125rem;
- 
- }
- 
- .menu__list:not(.theme-doc-sidebar-menu) {
-   position: relative;
-   margin-left: 12px;
- }
- 
- aside.theme-doc-sidebar-container .menu__list::before {
- 
-   content: "";
-   background-color: #e5e7eb;
-   left: 0;
-   top: .25rem;
-   bottom: .25rem;
-   width: 1px;
-   position: absolute;
- }
- 
- [data-theme='dark'] aside.theme-doc-sidebar-container .menu__list::before {
- 
-   background-color: var(--openapi-explorer-schema-detail-color);
- 
- }
- 
- .theme-doc-sidebar-menu.menu__list::before {
-   display: none;
- }
- 
- .menu {
-   font-weight: var(--ifm-font-weight-normal);
-   font-size: 14px;
- }
- 
- [data-theme='light'] {
-   color: #334155;
- }
- 
- [data-theme='dark'] {
-   color: #e2e8f0;
- }
- 
- .menu__link--active.menu__link--sublist {
-   color: inherit;
- }
- 
- .menu__link--active:not(.menu__link--sublist) {
-   background-color: #e66e501a;
- }
- 
- .menu__link {
-   padding-top: .375rem;
-   padding-bottom: .375rem;
- 
- }
- 
- .pagination-nav__link {
-   border-color: transparent;
-   color: #111;
-   padding-left: 0;
-   padding-right: 0;
- }
- 
- .pagination-nav__link:hover {
-   border-color: transparent;
- }
- 
- .pagination-nav__label {
-   font-size: 1.125rem;
- }
- 
- #search_input_react {
-   border-radius: 5px;
-   padding-left :10px;
-   padding-right :10px;
-   width: 250px;
-   background-image: none;
- }
- #search_input_react::placeholder{
-   content: '';
- }
- 
- [data-theme='dark'] #search_input_react{
-   background: #f9fafb1a;
- }
- 
- .pagination-nav__link:hover .pagination-nav__label {
-   color: var(--ifm-color-primary);
- 
- }
- 
- [data-theme='dark'] .pagination-nav__link .pagination-nav__label {
-   color: #d1d5db;
-   font-weight: 500;
- }
- 
- [data-theme='light'] .pagination-nav__link .pagination-nav__label {
-   color: #4f5a66;
-   font-weight: 500;
- }
- 
- 
- [data-theme='light'] .theme-api-markdown .openapi-tabs__code-container:not(.openapi-tabs__code-container-inner),
- 
+	height: 1.25rem;
+	background-size: 16px 16px;
+}
+html[data-theme='light'] {
+	.openapi-markdown__details {
+		background-color: var(--openapi-explorer-schema-detail-color);
+		border: 1px solid var(--color-input-border);
+		padding: 8px 8px;
+		.openapi-markdown__details {
+			padding: 0px 8px;
+			border: none;
+		}
+	}
+}
+.pagination-nav__sublabel {
+	display: none;
+}
+.pagination-nav__link--next {
+	.pagination-nav__label {
+		&::after {
+			content: "\f054";
+			font-family: "Font Awesome 6 Pro";
+			margin-left: .5rem;
+			font-size: 1.125rem;
+		}
+	}
+}
+.pagination-nav__link--prev {
+	.pagination-nav__label {
+		&::before {
+			content: "\f053";
+			font-family: "Font Awesome 6 Pro";
+			margin-right: .5rem;
+			font-size: 1.125rem;
+		}
+	}
+}
+.menu__list {
+	&:not(.theme-doc-sidebar-menu) {
+		position: relative;
+		margin-left: 12px;
+	}
+}
+aside {
+	&.theme-doc-sidebar-container {
+		.menu__list {
+			&::before {
+				content: "";
+				background-color: #e5e7eb;
+				left: 0;
+				top: .25rem;
+				bottom: .25rem;
+				width: 1px;
+				position: absolute;
+			}
+		}
+	}
+}
+.theme-doc-sidebar-menu {
+	&.menu__list {
+		&::before {
+			display: none;
+		}
+	}
+}
+.menu {
+	font-weight: var(--ifm-font-weight-normal);
+	font-size: 14px;
+}
+.menu__link--active {
+	&.menu__link--sublist {
+		color: inherit;
+	}
+	&:not(.menu__link--sublist) {
+		background-color: #e66e501a;
+	}
+}
+.menu__link {
+	padding-top: .375rem;
+	padding-bottom: .375rem;
+}
+.pagination-nav__link {
+	border-color: transparent;
+	color: #111;
+	padding-left: 0;
+	padding-right: 0;
+	&:hover {
+		border-color: transparent;
+		.pagination-nav__label {
+			color: var(--ifm-color-primary);
+		}
+	}
+}
+.pagination-nav__label {
+	font-size: 1.125rem;
+}
+
+[data-theme='light'] .theme-api-markdown .openapi-tabs__code-container:not(.openapi-tabs__code-container-inner),
  [data-theme='light'] .openapi-explorer__request-header-container,
  .openapi-explorer__request-header-container:hover {
-   box-shadow: none;
- }
- 
- [data-theme='light'] .openapi-explorer__form-item-input,
+	box-shadow: none;
+}
+[data-theme='light'] .openapi-explorer__form-item-input,
  [data-theme='light'] .openapi-explorer__select-input {
-   border-radius: var(--ifm-global-radius);
-   border: 1px solid var(--color-input-border);
-   margin-top: 0;
- }
- 
- 
- 
- .openapi-explorer__response-placeholder-message {
-   color: var(--ifm-pre-color);
- }
- 
- .openapi-explorer__request-btn {
-   text-transform: capitalize !important;
- 
- }
- 
- .openapi-explorer__request-btn::before {
-   content: "\f1d8";
-   font-family: "Font Awesome 6 Pro";
-   margin-right: 8px;
-   font-weight: 300;
-   display: inline-block;
- }
- 
- .openapi-tabs__code-item {
-   flex: 0 0 50px !important;
- }
- 
- .openapi-explorer__floating-btn {
-   position: relative;
- }
- 
- [data-theme='light'] .openapi-explorer__floating-btn button {
-   top: 50%;
-   transform: translateY(-50%);
-   font-size: 0;
-   border-radius: 100% !important;
-   background: var(--ifm-color-primary);
-   color: white;
- 
- }
- 
- [data-theme='dark'] .openapi-explorer__floating-btn button {
-   top: 50%;
-   transform: translateY(-50%);
-   font-size: 0;
-   border-radius: 100% !important;
-   background: var(--ifm-color-primary);
-   color: white;
- 
- }
- 
- .openapi-explorer__floating-btn button::before {
-   content: "\f303";
-   font-family: "Font Awesome 6 Pro";
-   font-weight: 300;
-   font-size: 12px;
- 
- }
- 
- .openapi-explorer__server-container .openapi-explorer__floating-btn button::before {
-   content: "\f00d";
-   font-family: "Font Awesome 6 Pro";
-   font-weight: 300;
-   font-size: 12px;
- 
- }
- 
- [data-theme='light'] .openapi-explorer__form-item {
-   padding: 0;
- }
- 
- [data-theme='light'] .openapi-explorer__form-item .openapi-explorer__server-url {
-   padding: 1em;
-   display: block;
-   border-radius: var(--ifm-global-radius);
-   border: 1px solid var(--color-input-border);
- }
- 
- [data-theme='dark'] .openapi-explorer__server-container .openapi-explorer__form-item {
-   padding: 0;
- }
- 
- /* [data-theme='light'] .openapi-explorer__request-form .openapi-explorer__details-container {
- 
-   background: #f1f1f1;
-   padding: 0 10px 0px 10px;
-   margin-bottom: 4px;
-   border: 1px solid var(--color-input-border);
- } */
- 
- .openapi-explorer__server-description {
-   display: block;
- }
- 
- .openapi-explorer__request-title::before {
-   content: "\f303";
-   font-family: "Font Awesome 6 Pro";
-   font-weight: 300;
-   font-size: 12px;
- }
+	border-radius: var(--ifm-global-radius);
+	border: 1px solid var(--color-input-border);
+	margin-top: 0;
+}
+.openapi-explorer__response-placeholder-message {
+	color: var(--ifm-pre-color);
+}
+.openapi-explorer__request-btn {
+	text-transform: capitalize !important;
+	&::before {
+		content: "\f1d8";
+		font-family: "Font Awesome 6 Pro";
+		margin-right: 8px;
+		font-weight: 300;
+		display: inline-block;
+	}
+}
+.openapi-tabs__code-item {
+	flex: 0 0 50px !important;
+}
+.openapi-explorer__floating-btn {
+	position: relative;
+	button {
+		&::before {
+			content: "\f303";
+			font-family: "Font Awesome 6 Pro";
+			font-weight: 300;
+			font-size: 12px;
+		}
+	}
+}
+.openapi-explorer__server-container {
+	.openapi-explorer__floating-btn {
+		button {
+			&::before {
+				content: "\f00d";
+				font-family: "Font Awesome 6 Pro";
+				font-weight: 300;
+				font-size: 12px;
+			}
+		}
+	}
+}
+.openapi-explorer__server-description {
+	display: block;
+}
+.openapi-explorer__request-title {
+	&::before {
+		content: "\f303";
+		font-family: "Font Awesome 6 Pro";
+		font-weight: 300;
+		font-size: 12px;
+	}
+}
 
  /* Scalar Theme */
 :root {
@@ -459,10 +407,7 @@ html[data-theme='light'] .t-doc__sidebar {
   );
 }
 html[data-theme='dark'] .t-doc__sidebar {
-  --scalar-sidebar-item-hover-background: var(
-    --ifm-menu-color-background-hover,
-    hsla(0, 0%, 100%, 0.05)
-  );
+  --scalar-sidebar-item-hover-background: var(--ifm-menu-color-background-hover,hsla(0, 0%, 100%, 0.05));
 }
 .references-sidebar {
   --refs-sidebar-width: 300px !important;
@@ -693,3 +638,23 @@ html[data-theme='light'] .api-client-drawer {
     border-radius: 12px;
   }
 }
+
+[data-mode="iframe"] .navbar,
+[data-mode="iframe"] .theme-doc-sidebar-container,
+[data-mode="iframe"] .theme-doc-breadcrumbs,
+[data-mode="iframe"] footer,
+[data-mode="iframe"] .pagination-nav
+ {
+  display: none;
+}
+
+.api-reference {
+  main {
+    &.container {
+       width: inherit;
+      max-width: inherit;
+      margin: 0!important;
+    }
+  }
+}
+

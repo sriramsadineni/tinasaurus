@@ -11,19 +11,46 @@
     {
       "items": [
         {
-          "title": "Easy to Use",
+          "title": "Guides",
           "description": "Docusaurus was designed from the ground up to be easily installed and         used to get your website up and running quickly.\n",
-          "image": "/img/undraw_docusaurus_mountain.svg"
+          "image": "",
+          "icon": "fa-light fa-book",
+          "size": "2x"
         },
         {
-          "title": "Focus on What Matters",
+          "title": "Api Documentation",
           "description": "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the docs directory.\n",
-          "image": "/img/undraw_docusaurus_tree.svg"
+          "image": "/img/undraw_docusaurus_tree.svg",
+          "icon": "fa-light fa-code",
+          "size": "2x"
         },
         {
-          "title": "Powered by React",
+          "title": "Releases",
           "description": "Extend or customize your website layout by reusing React. Docusaurus can         be extended while reusing the same header and footer.\n",
-          "image": "/img/undraw_docusaurus_react.svg"
+          "image": "/img/undraw_docusaurus_react.svg",
+          "icon": "fa-light fa-font-awesome",
+          "size": "2x"
+        },
+        {
+          "title": "FQA",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n",
+          "image": "/img/logo.svg",
+          "icon": "fa-light fa-messages-question",
+          "size": "2x"
+        },
+        {
+          "title": "Discussion",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n",
+          "image": "",
+          "icon": "fa-light fa-comments",
+          "size": "2x"
+        },
+        {
+          "title": "Support",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n",
+          "image": "/img/undraw_docusaurus_tree.svg",
+          "icon": "fa-light fa-headset",
+          "size": "2x"
         }
       ],
       "_template": "features"
