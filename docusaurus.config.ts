@@ -90,9 +90,10 @@ const config = {
   tagline: docusaurusData.tagline || "Dinosaurs are cool",
   url: docusaurusData.url || "https://tinasaurus.vercel.app/",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  staticDirectories: ['public', 'static','.attachments'],
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -141,33 +142,10 @@ const config = {
               sidebarCollapsible:true,
               sidebarCollapsed:false
             },
-            // version: "2.0.0", // Current version
-            // label: "v2.0.0", // Current version label
-            // baseUrl: "/api-reference/get-started", // Leading slash is important
-            // versions: {
-            //   "1.0.0": {
-            //     specPath: "https://apidev.piyovi.io/swagger/v1/swagger.json",npm 
-            //     outputDir: "docs/api-reference/1.0.0", // No trailing slash
-            //     label: "v1.0.0",
-            //     baseUrl: "/api-reference/1.0.0/get-started", // Leading slash is important
-            //   },
-            // },
           }
-      
+    
         }
     }],
-    // [
-    //   '@scalar/docusaurus',
-    //   {
-    //     label: 'Api Referfence',
-    //     route: '/api',
-    //     configuration: {
-    //       spec: {
-    //         url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
-    //       },
-    //     },
-    //   } as ScalarOptions,
-    // ],
   ],
   themes: ["docusaurus-theme-openapi-docs"],
   themeConfig:

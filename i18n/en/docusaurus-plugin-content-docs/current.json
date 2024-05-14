@@ -1,0 +1,114 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.apiReferenceSideBar.category.Api Reference": {
+    "message": "Api Reference",
+    "description": "The label for category Api Reference in sidebar apiReferenceSideBar"
+  },
+  "sidebar.apiReferenceSideBar.category.Api Reference.link.generated-index.title": {
+    "message": "Petstore API (latest)",
+    "description": "The generated-index page title for category Api Reference in sidebar apiReferenceSideBar"
+  },
+  "sidebar.apiReferenceSideBar.category.Api Reference.link.generated-index.description": {
+    "message": "This is a sample server Petstore server. You can find out more about Swagger at http://swagger.io or on irc.freenode.net, #swagger. For this sample, you can use the api key special-key to test the authorization filters.",
+    "description": "The generated-index page description for category Api Reference in sidebar apiReferenceSideBar"
+  },
+  "sidebar.apiReferenceSideBar.category.pet": {
+    "message": "pet",
+    "description": "The label for category pet in sidebar apiReferenceSideBar"
+  },
+  "sidebar.apiReferenceSideBar.category.store": {
+    "message": "store",
+    "description": "The label for category store in sidebar apiReferenceSideBar"
+  },
+  "sidebar.apiReferenceSideBar.category.user": {
+    "message": "user",
+    "description": "The label for category user in sidebar apiReferenceSideBar"
+  },
+  "sidebar.apiReferenceSideBar.doc.Get Started": {
+    "message": "Get Started",
+    "description": "The label for the doc item Get Started in sidebar apiReferenceSideBar, linking to the doc guides/invoice-audit/index"
+  },
+  "sidebar.apiReferenceSideBar.doc.Update an existing pet": {
+    "message": "Update an existing pet",
+    "description": "The label for the doc item Update an existing pet in sidebar apiReferenceSideBar, linking to the doc api-reference/update-pet"
+  },
+  "sidebar.apiReferenceSideBar.doc.Add a new pet to the store": {
+    "message": "Add a new pet to the store",
+    "description": "The label for the doc item Add a new pet to the store in sidebar apiReferenceSideBar, linking to the doc api-reference/add-pet"
+  },
+  "sidebar.apiReferenceSideBar.doc.Finds Pets by status": {
+    "message": "Finds Pets by status",
+    "description": "The label for the doc item Finds Pets by status in sidebar apiReferenceSideBar, linking to the doc api-reference/find-pets-by-status"
+  },
+  "sidebar.apiReferenceSideBar.doc.Finds Pets by tags": {
+    "message": "Finds Pets by tags",
+    "description": "The label for the doc item Finds Pets by tags in sidebar apiReferenceSideBar, linking to the doc api-reference/find-pets-by-tags"
+  },
+  "sidebar.apiReferenceSideBar.doc.Find pet by ID": {
+    "message": "Find pet by ID",
+    "description": "The label for the doc item Find pet by ID in sidebar apiReferenceSideBar, linking to the doc api-reference/get-pet-by-id"
+  },
+  "sidebar.apiReferenceSideBar.doc.Updates a pet in the store with form data": {
+    "message": "Updates a pet in the store with form data",
+    "description": "The label for the doc item Updates a pet in the store with form data in sidebar apiReferenceSideBar, linking to the doc api-reference/update-pet-with-form"
+  },
+  "sidebar.apiReferenceSideBar.doc.Deletes a pet": {
+    "message": "Deletes a pet",
+    "description": "The label for the doc item Deletes a pet in sidebar apiReferenceSideBar, linking to the doc api-reference/delete-pet"
+  },
+  "sidebar.apiReferenceSideBar.doc.uploads an image": {
+    "message": "uploads an image",
+    "description": "The label for the doc item uploads an image in sidebar apiReferenceSideBar, linking to the doc api-reference/upload-file"
+  },
+  "sidebar.apiReferenceSideBar.doc.Returns pet inventories by status": {
+    "message": "Returns pet inventories by status",
+    "description": "The label for the doc item Returns pet inventories by status in sidebar apiReferenceSideBar, linking to the doc api-reference/get-inventory"
+  },
+  "sidebar.apiReferenceSideBar.doc.Place an order for a pet": {
+    "message": "Place an order for a pet",
+    "description": "The label for the doc item Place an order for a pet in sidebar apiReferenceSideBar, linking to the doc api-reference/place-order"
+  },
+  "sidebar.apiReferenceSideBar.doc.Find purchase order by ID": {
+    "message": "Find purchase order by ID",
+    "description": "The label for the doc item Find purchase order by ID in sidebar apiReferenceSideBar, linking to the doc api-reference/get-order-by-id"
+  },
+  "sidebar.apiReferenceSideBar.doc.Delete purchase order by ID": {
+    "message": "Delete purchase order by ID",
+    "description": "The label for the doc item Delete purchase order by ID in sidebar apiReferenceSideBar, linking to the doc api-reference/delete-order"
+  },
+  "sidebar.apiReferenceSideBar.doc.Create user": {
+    "message": "Create user",
+    "description": "The label for the doc item Create user in sidebar apiReferenceSideBar, linking to the doc api-reference/create-user"
+  },
+  "sidebar.apiReferenceSideBar.doc.Creates list of users with given input array": {
+    "message": "Creates list of users with given input array",
+    "description": "The label for the doc item Creates list of users with given input array in sidebar apiReferenceSideBar, linking to the doc api-reference/create-users-with-list-input"
+  },
+  "sidebar.apiReferenceSideBar.doc.Logs user into the system": {
+    "message": "Logs user into the system",
+    "description": "The label for the doc item Logs user into the system in sidebar apiReferenceSideBar, linking to the doc api-reference/login-user"
+  },
+  "sidebar.apiReferenceSideBar.doc.Logs out current logged in user session": {
+    "message": "Logs out current logged in user session",
+    "description": "The label for the doc item Logs out current logged in user session in sidebar apiReferenceSideBar, linking to the doc api-reference/logout-user"
+  },
+  "sidebar.apiReferenceSideBar.doc.Get user by user name": {
+    "message": "Get user by user name",
+    "description": "The label for the doc item Get user by user name in sidebar apiReferenceSideBar, linking to the doc api-reference/get-user-by-name"
+  },
+  "sidebar.apiReferenceSideBar.doc.Update user": {
+    "message": "Update user",
+    "description": "The label for the doc item Update user in sidebar apiReferenceSideBar, linking to the doc api-reference/update-user"
+  },
+  "sidebar.apiReferenceSideBar.doc.Delete user": {
+    "message": "Delete user",
+    "description": "The label for the doc item Delete user in sidebar apiReferenceSideBar, linking to the doc api-reference/delete-user"
+  },
+  "sidebar.docSideBar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar docSideBar"
+  }
+}

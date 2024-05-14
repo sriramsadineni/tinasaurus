@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Piyovi Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Tina",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guides": {
+    "message": "Guides",
+    "description": "Navbar item with label Guides"
+  },
+  "item.label.Release": {
+    "message": "Release",
+    "description": "Navbar item with label Release"
+  },
+  "item.label.Api Documentation": {
+    "message": "Api Documentation",
+    "description": "Navbar item with label Api Documentation"
+  }
+}
