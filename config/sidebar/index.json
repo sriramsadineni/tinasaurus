@@ -2,9 +2,7 @@
   "id": "docSideBar",
   "label": "Docs Sidebar",
   "items": [
-    
     {
-      "title": "Get Started",
       "document": "docs/guides/index.mdx",
       "_template": "doc"
     },
@@ -13,6 +11,11 @@
       "link": "doc",
       "docLink": "docs/guides/integration/index.mdx",
       "items": [
+        {
+          "document": "docs/guides/configurations/location.mdx",
+          "label": "Location",
+          "_template": "doc"
+        },
         {
           "title": "Package",
           "link": "doc",
