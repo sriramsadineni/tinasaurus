@@ -12,6 +12,11 @@
       "docLink": "docs/guides/integration/index.mdx",
       "items": [
         {
+          "document": "docs/guides/configurations/address-book.mdx",
+          "label": "Address Book",
+          "_template": "doc"
+        },
+        {
           "document": "docs/guides/configurations/location.mdx",
           "label": "Location",
           "_template": "doc"
